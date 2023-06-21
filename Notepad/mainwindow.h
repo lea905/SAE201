@@ -48,6 +48,10 @@ private slots:
 
     void on_actionColor_triggered();
 
+    void on_actionAd_Bouton_triggered();
+
+    void on_actionAd_Label_triggered();
+
 private:
     Ui::MainWindow *ui;
     QString currentFile;

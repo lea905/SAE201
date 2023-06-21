@@ -191,3 +191,25 @@ void MainWindow::on_actionColor_triggered()
     ui->textEdit->setTextColor(color.getColor(Qt::blue,this));
 }
 
+
+void MainWindow::on_actionAd_Bouton_triggered()
+{
+    QPushButton *button = new QPushButton("", this);
+    button->setGeometry(100,350,100,100);//positionH, positionV, tailleH, tailleV
+    QPushButton *button2 = new QPushButton("", this);
+    button2->setGeometry(600,350,100,100);
+    button->show();
+    button2->show();
+}
+
+
+void MainWindow::on_actionAd_Label_triggered()
+{
+    QLineEdit *m_lineEdit = new QLineEdit("",this);
+    QLineEdit *m_lineEdit2 = new QLineEdit("",this);
+    m_lineEdit->setGeometry(111,360,75,20);
+    m_lineEdit2->setGeometry(611,360,75,20);
+    m_lineEdit->show();
+    m_lineEdit2->show();
+}
+
