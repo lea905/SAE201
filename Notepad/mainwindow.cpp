@@ -2,6 +2,9 @@
 #include "ui_mainwindow.h"
 #include <QMainWindow>
 #include <QMessageBox>
+#include <QColorDialog>
+#include <QtWidgets>
+#include <QColor>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -179,5 +182,12 @@ void MainWindow::on_actionabout_triggered()
     QMessageBox msgBox;
     msgBox.setText("The document has been modified.");
     msgBox.exec();
+}
+
+
+void MainWindow::on_actionColor_triggered()
+{
+    QColorDialog color;
+    ui->textEdit->setTextColor(color.getColor(Qt::blue,this));
 }
 

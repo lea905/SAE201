@@ -46,6 +46,8 @@ private slots:
 
     void on_actionabout_triggered();
 
+    void on_actionColor_triggered();
+
 private:
     Ui::MainWindow *ui;
     QString currentFile;

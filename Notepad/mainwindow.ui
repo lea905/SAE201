@@ -132,6 +132,10 @@
    </property>
   </action>
   <action name="actionColor">
+   <property name="icon">
+    <iconset resource="Notepad.qrc">
+     <normaloff>:/images/pencil.png</normaloff>:/images/pencil.png</iconset>
+   </property>
    <property name="text">
     <string>Color</string>
    </property>
