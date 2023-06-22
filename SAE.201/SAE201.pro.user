@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 8.0.1, 2023-06-22T08:51:32. -->
+<!-- Written by QtCreator 8.0.1, 2023-06-22T11:10:44. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -235,8 +235,9 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:Z:/Documents/SAE201/SAE201.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">Z:/Documents/SAE201/SAE201.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">SAE2012</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:Z:/Bureau/SAE201/SAE.201/SAE201.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">Z:/Bureau/SAE201/SAE.201/SAE201.pro</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>

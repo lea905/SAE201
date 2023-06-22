@@ -1,5 +1,6 @@
 #include "notepad.h"
 
+int value = 0;
 
 Notepad::Notepad(QWidget *parent) :
     QMainWindow(parent), ui(new Ui::Notepad){
@@ -16,7 +17,9 @@ Notepad::~Notepad(){
 
 void Notepad::on_actionNew_triggered()
 {
-
+    ui->progressBar->reset();
+    value = 0;
+    ui->progressBar->setValue(value);
     ui->textEdit->setText(QString());
 }
 
@@ -112,6 +115,10 @@ void Notepad::on_actionBold_triggered(bool bold)
     }
 }
 
+void Notepad::on_actionUnderline_triggered(bool underline)
+{
+    ui->textEdit->setFontUnderline(underline);
+}
 
 void Notepad::on_actionmessageBox_triggered()
 {
@@ -127,45 +134,28 @@ void Notepad::on_actionColor_triggered()
     ui->textEdit->setTextColor(color.getColor(Qt::blue, this));
 }
 
-/*
-void Notepad::on_pushButton_clicked()
-{
-    int value = 0;
-    ui->progressBar->setValue(value);
-        for(int i = 0; i<101; i=i+5){
-            value = i;
-            ui->progressBar->setValue(value);
-            //_sleep(1000);
-       }
-    currentFile.clear();
-}
-*/
-/*
+
 void Notepad::on_pushButton_clicked(bool checked)
 {
-    int value = 10;
-    ui->progressBar->setValue(value);
-    if(checked == true)
-        for(int i = 0; i<101; i=i+5){
-            value = i;
-            ui->progressBar->setValue(value);
-        }
 
+    ui->progressBar->setValue(value);
+    if(checked == false){
+        value = value + 5;
+        ui->progressBar->setValue(value);
+    }
     currentFile.clear();
 }
 
-*/
-
-void Notepad::on_pushButton_toggled(bool checked)
+void Notepad::on_pushButton_2_clicked(bool checked)
 {
-    int value = 10;
     ui->progressBar->setValue(value);
-    if(checked == true)
-        for(int i = 0; i<101; i=i+5){
-            value = i;
-            ui->progressBar->setValue(value);
-        }
-
+    if(checked == false){
+        value = value - 5;
+        ui->progressBar->setValue(value);
+    }
     currentFile.clear();
 }
+
+
+
 

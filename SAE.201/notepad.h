@@ -22,6 +22,7 @@ public:
     ~Notepad();
 
 private slots:
+
     void on_actionNew_triggered();
 
     void on_actionOpen_triggered();
@@ -38,19 +39,16 @@ private slots:
 
     void on_actionBold_triggered(bool bold);
 
+    void on_actionUnderline_triggered(bool underline);
+
     void on_actionmessageBox_triggered();
 
     void on_actionColor_triggered();
 
-    //void on_actionProgress_Bar_triggered(int value);
+    void on_pushButton_clicked(bool checked);
 
-    //void on_pushButton_clicked(int value);
+    void on_pushButton_2_clicked(bool checked);
 
-    //void on_pushButton_clicked();
-
-    //void on_pushButton_clicked(bool checked);
-
-    void on_pushButton_toggled(bool checked);
 
 private:
     Ui::Notepad *ui;
